@@ -3,13 +3,14 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <div className="flex justify-center px-36 space-x-20 pt-28 pb-28">
-        <div className="w-2/4">
-          <h1 className="text-black font-heebo text-[48px] font-bold leading-[61px]  ">
+      {/* Hero Section */}
+      <div className="flex flex-col sm:flex-row justify-center px-4 sm:px-36 space-y-8 sm:space-y-0 sm:space-x-20 pt-28 pb-28">
+        <div className="w-full sm:w-2/4">
+          <h1 className="text-black font-heebo text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-[48px] sm:leading-[56px] lg:leading-[61px]">
             Hi, I am John <br />
             Creative Technology
           </h1>
-          <p className="text-black mt-5 mb-5 ">
+          <p className="text-black mt-5 mb-5">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.{" "}
@@ -18,16 +19,17 @@ const Home = () => {
             Download Resume
           </button>
         </div>
-        <div className="w-1/4 pt-10">
+        <div className="w-full sm:w-1/4 pt-10">
           <img
             src="/image.png"
             alt="Dev Image"
-            className="w-2920px h-299px rounded-full "
+            className="w-full h-auto rounded-full"
           />
         </div>
       </div>
 
-      <div className="bg-rose-100 flex px-52 space-x-20 pb-14 pt-8">
+      {/* Recent Post Section */}
+      <div className="bg-rose-100 flex flex-col sm:flex-row px-4 sm:px-52 space-y-8 sm:space-y-0 sm:space-x-20 pb-14 pt-8">
         <div>
           <h4 className="text-black text-[18px] pb-3 font-bold">Recent Post</h4>
           <div className="bg-white px-8 py-10 rounded-sm">
@@ -47,14 +49,14 @@ const Home = () => {
               </div>
             </div>
             <p className="text-blue-950">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.{" "}
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.{" "}
             </p>
           </div>
         </div>
         <div>
-          <h4 className="text-red-400 text-[18px] pb-3  text-end">View All</h4>
+          <h4 className="text-red-400 text-[18px] pb-3 text-end">View All</h4>
           <div className="bg-white px-8 py-10 rounded-sm">
             <h2 className="text-black text-[22px] font-heebo font-bold">
               Making a design system from scratch
@@ -72,24 +74,25 @@ const Home = () => {
               </div>
             </div>
             <p className="text-blue-950">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.{" "}
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.{" "}
             </p>
           </div>
         </div>
       </div>
 
+      {/* Featured Section */}
       <div>
-        <h5 className="text-black px-52 text-[18px] font-semibold pb-5 pt-12">
+        <h5 className="text-black px-4 sm:px-52 text-[18px] font-semibold pb-5 pt-12">
           Featured Section
         </h5>
-        <div className="flex space-x-10 px-52 pb-20">
+        <div className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10 px-4 sm:px-52 pb-20">
           <div>
             <img
               src="/Rectangle.png"
               alt="last first Image"
-              className="w-[460px] h-[160px] rounded-2xl"
+              className="w-full sm:w-[460px] h-auto sm:h-[160px] rounded-2xl"
             />
           </div>
           <div className="pt-1">
@@ -102,7 +105,7 @@ const Home = () => {
               </span>
               Dashboard
             </h5>
-            <p className="text-black text-[16px] w-[85%]">
+            <p className="text-black text-[16px] w-full sm:w-[85%]">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -110,12 +113,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex space-x-10 px-52 pb-20">
+        <div className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10 px-4 sm:px-52 pb-20">
           <div>
             <img
               src="/Rectangle 32.png"
               alt="last first Image"
-              className="w-[460px] h-[160px] rounded-2xl"
+              className="w-full sm:w-[460px] h-auto sm:h-[160px] rounded-2xl"
             />
           </div>
           <div className="pt-1">
@@ -128,7 +131,7 @@ const Home = () => {
               </span>
               Dashboard
             </h5>
-            <p className="text-black text-[16px] w-[85%]">
+            <p className="text-black text-[16px] w-full sm:w-[85%]">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -136,12 +139,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex space-x-10 px-52 pb-20">
+        <div className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10 px-4 sm:px-52 pb-20">
           <div>
             <img
               src="/Rectangle 34.png"
               alt="last first Image"
-              className="w-[460px] h-[160px] rounded-2xl"
+              className="w-full sm:w-[460px] h-auto sm:h-[160px] rounded-2xl"
             />
           </div>
           <div className="pt-1">
@@ -154,7 +157,7 @@ const Home = () => {
               </span>
               Dashboard
             </h5>
-            <p className="text-black text-[16px] w-[85%]">
+            <p className="text-black text-[16px] w-full sm:w-[85%]">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
